@@ -37,25 +37,25 @@ It shows that 7 variables (capitalAve,charDollar,charExclamation,edu,free,hp,rem
 
 
 ```
-Classification tree:
-rpart(formula = type ~ ., data = trainingset, method = "class")
-
-Variables actually used in tree construction:
-[1] capitalAve      charDollar      charExclamation edu            
-[5] free            hp              remove         
-
-Root node error: 1202/3068 = 0.39179
-
-n= 3068 
-
-        CP nsplit rel error  xerror     xstd
-1 0.485857      0   1.00000 1.00000 0.022494
-2 0.146423      1   0.51414 0.56406 0.019120
-3 0.044093      2   0.36772 0.44592 0.017498
-4 0.029950      4   0.27953 0.33777 0.015615
-5 0.013311      5   0.24958 0.29285 0.014686
-6 0.011647      6   0.23627 0.28619 0.014540
-7 0.010000      7   0.22463 0.27038 0.014182
+## Classification tree:
+## rpart(formula = type ~ ., data = trainingset, method = "class")
+## 
+## Variables actually used in tree construction:
+## [1] capitalAve      charDollar      charExclamation edu            
+## [5] free            hp              remove         
+## 
+## Root node error: 1202/3068 = 0.39179
+## 
+## n= 3068 
+## 
+##         CP nsplit rel error  xerror     xstd
+## 1 0.485857      0   1.00000 1.00000 0.022494
+## 2 0.146423      1   0.51414 0.56406 0.019120
+## 3 0.044093      2   0.36772 0.44592 0.017498
+## 4 0.029950      4   0.27953 0.33777 0.015615
+## 5 0.013311      5   0.24958 0.29285 0.014686
+## 6 0.011647      6   0.23627 0.28619 0.014540
+## 7 0.010000      7   0.22463 0.27038 0.014182
 ```
 
 ```
@@ -80,33 +80,33 @@ library(caret)
 confusionMatrix(pred,testset$type)
 ```
 ```
-Confusion Matrix and Statistics
-
-          Reference
-Prediction nonspam spam
-   nonspam     889  114
-   spam         33  497
-                                          
-               Accuracy : 0.9041          
-                 95% CI : (0.8883, 0.9184)
-    No Information Rate : 0.6014          
-    P-Value [Acc > NIR] : < 2.2e-16       
-                                          
-                  Kappa : 0.7954          
- Mcnemar's Test P-Value : 4.159e-11       
-                                          
-            Sensitivity : 0.9642          
-            Specificity : 0.8134          
-         Pos Pred Value : 0.8863          
-         Neg Pred Value : 0.9377          
-             Prevalence : 0.6014          
-         Detection Rate : 0.5799          
-   Detection Prevalence : 0.6543          
-      Balanced Accuracy : 0.8888          
-                                          
-       'Positive' Class : nonspam         
-                                   
+## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction nonspam spam
+##    nonspam     889  114
+##    spam         33  497
+##                                           
+##                Accuracy : 0.9041          
+##                  95% CI : (0.8883, 0.9184)
+##     No Information Rate : 0.6014          
+##     P-Value [Acc > NIR] : < 2.2e-16       
+##                                           
+##                   Kappa : 0.7954          
+##  Mcnemar's Test P-Value : 4.159e-11       
+##                                           
+##             Sensitivity : 0.9642          
+##             Specificity : 0.8134          
+##          Pos Pred Value : 0.8863          
+##          Neg Pred Value : 0.9377          
+##              Prevalence : 0.6014          
+##          Detection Rate : 0.5799          
+##    Detection Prevalence : 0.6543          
+##       Balanced Accuracy : 0.8888          
+##                                           
+##        'Positive' Class : nonspam         
 ```
+
 ## Shiny Apps
 On the side panel, user can enter frequency of the words / characters. "capitalAve" contains the average length of capital letters.
 Upon entering the numbers, the application predict if the email is spam or nonspam
