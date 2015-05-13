@@ -79,7 +79,34 @@ pred <- predict(model, testset)
 library(caret)
 confusionMatrix(pred,testset$type)
 ```
+```
+Confusion Matrix and Statistics
 
+          Reference
+Prediction nonspam spam
+   nonspam     889  114
+   spam         33  497
+                                          
+               Accuracy : 0.9041          
+                 95% CI : (0.8883, 0.9184)
+    No Information Rate : 0.6014          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.7954          
+ Mcnemar's Test P-Value : 4.159e-11       
+                                          
+            Sensitivity : 0.9642          
+            Specificity : 0.8134          
+         Pos Pred Value : 0.8863          
+         Neg Pred Value : 0.9377          
+             Prevalence : 0.6014          
+         Detection Rate : 0.5799          
+   Detection Prevalence : 0.6543          
+      Balanced Accuracy : 0.8888          
+                                          
+       'Positive' Class : nonspam         
+                                   
+```
 ## Shiny Apps
 On the side panel, user can enter frequency of the words / characters. "capitalAve" contains the average length of capital letters.
 Upon entering the numbers, the application predict if the email is spam or nonspam
