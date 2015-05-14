@@ -2,6 +2,7 @@ library(shiny)
 library(kernlab)
 library(lattice)
 library(ggplot2)
+library(xtable)
 
 data("spam")
 index <- 1:nrow(spam)
@@ -12,7 +13,7 @@ library(e1071)
 model <- svm(type ~ ., data = trainingset, 
 method = "C-classification", kernel = "radial", cost = 10, gamma = 0.1)
 pred <- predict(model, testset)
-library(caret)
+
 
 shinyServer(
   function(input, output, session) {
