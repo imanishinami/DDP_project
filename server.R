@@ -1,11 +1,13 @@
 library(shiny)
 library(kernlab)
 library(lattice)
-library(ggplot2)
-library(xtable)
+
 
 data("spam")
 index <- 1:nrow(spam)
+
+set.seed(313)
+
 testindex <- sample(index, trunc(length(index)/3))
 testset <- spam[testindex,]
 trainingset <- spam[-testindex,]

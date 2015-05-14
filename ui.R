@@ -8,22 +8,22 @@ shinyUI(pageWithSidebar(
     textInput(inputId="i_hp", label = "Word: hp -- e.g. 0.405"),
     textInput(inputId="i_charExclamation", label = "Charcter: Exclamation -- e.g. 0.23"),
     textInput(inputId="i_edu", label = "Word: edu -- e.g. 0.2"),
-    textInput(inputId="i_capitalAve", label = "Avg of capital letters in email -- e.g. 2.7")
+    textInput(inputId="i_capitalAve", label = "Avg no of capital letters -- e.g. 2.7")
     
   ),
   mainPanel(
     h3('Your Input: '),
-    p('Output charDollar'),
+    p('Char Dollar'),
     textOutput('i_charDollar'),
-    p('Output remove'),
+    p('Word remove'),
     textOutput('i_remove'),
-    p('Output hp'),
+    p('Word hp'),
     textOutput('i_hp'),
-    p('Output charExclamation'),
+    p('Char Exclamation'),
     textOutput('i_charExclamation'),
-    p('Output edu'),
+    p('Word edu'),
     textOutput('i_edu'),
-    p('Output capitalAve'),
+    p('Avg no of Capital letter'),
     textOutput('i_capitalAve'),
 
     h3('Output Result: '), 
