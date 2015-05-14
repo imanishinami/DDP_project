@@ -113,4 +113,4 @@ Upon entering the numbers, the application predict if the email is spam or nonsp
 
 https://imanishinami.shinyapps.io/project/
 
-![Screenshot of Shiny Apps](figure/screenshot.png) 
+![Screenshot of Shiny Apps](figure/ScreenShotR.png) 
