@@ -111,4 +111,6 @@ confusionMatrix(pred,testset$type)
 On the side panel, user can enter frequency of the words / characters. "capitalAve" contains the average length of capital letters.
 Upon entering the numbers, the application predict if the email is spam or nonspam
 
+https://imanishinami.shinyapps.io/project/
+
 ![Screenshot of Shiny Apps](figure/screenshot.png) 
