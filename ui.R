@@ -20,6 +20,7 @@ shinyUI(pageWithSidebar(
                               h3('Data:'),
                               p("The first 48 variables contain the frequency of the variable name (e.g., business) in the e-mail. If the variable name starts with num (e.g., num650) the it indicates the frequency of the corresponding number (e.g., 650). The variables 49-54 indicate the frequency of the characters such as Exclamation mark, Dollar symbol and etc. The variables 55-57 contain the average, longest and total run-length of capital letters. Variable 58 indicates the type of the mail and is either nonspam or spam, i.e. unsolicited commercial e-mail."),
                               h3('How to use:'),
+                              p("Firstly, click Result tab to see the output."),   
                               p("Input the frequency of character / words on the side panel. Type the number: 0 - 5 in the textbox."),
                               p("For more details, please refer to:"),
                               a(href="https://github.com/imanishinami/DDP_project/blob/master/README.md","README.md on Github")
